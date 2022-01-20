@@ -1,9 +1,10 @@
-﻿using System;
+﻿
+using System;
 using System.Windows.Forms;
 
-namespace Blj_OOP
+namespace RechteckForm1
 {
-    static class Program
+    static class RechteckForm1
     {
         /// <summary>
         /// Der Haupteinstiegspunkt für die Anwendung.

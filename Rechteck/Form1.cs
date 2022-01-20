@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Blj_OOP
+namespace RechteckForm1
 {
     public partial class Form1 : Form
     {
@@ -17,9 +17,9 @@ namespace Blj_OOP
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnAusrechnen_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hello World!");
+
         }
     }
 }
