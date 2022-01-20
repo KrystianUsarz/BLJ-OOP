@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace RechteckForm1
 {
-    static class RechteckForm1
+    static class Program
     {
         /// <summary>
         /// Der Haupteinstiegspunkt für die Anwendung.

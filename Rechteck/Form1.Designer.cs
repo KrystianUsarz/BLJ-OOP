@@ -105,6 +105,7 @@ namespace RechteckForm1
             this.btnBeenden.TabIndex = 7;
             this.btnBeenden.Text = "Beenden";
             this.btnBeenden.UseVisualStyleBackColor = true;
+            this.btnBeenden.Click += new System.EventHandler(this.btnBeenden_Click);
             // 
             // Form1
             // 

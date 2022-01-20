@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Rechteck
+namespace RechteckForm1
 {
     class Rechteck
     {
@@ -21,6 +21,11 @@ namespace Rechteck
         {
             get { return width; }
             set { width = value; }
+        }
+
+        public double GetArea()
+        {
+            return height * width;
         }
     }
 }
