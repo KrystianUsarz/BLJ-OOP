@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
  namespace ReisedauerZumMond
 {
-    class ReisedauerZumMondH
+    class ReisedauerZumMondBerechnung
     {
         int EntfernungMond = 384400;
 
@@ -18,23 +18,18 @@ using System.Windows.Forms;
             set { geschwindigkeit = value; }
         }
 
-
-
-    }
-
-    class ReisedauerZumMondMin
-    {
-        int EntfernungMond = 384400;
-
-        double geschwindigkeit;
-
-        public double Geschwindigkeit
+        public double ZeitWegZumMondStunden()
         {
-            get { return geschwindigkeit; }
-            set { geschwindigkeit = value; }
+            double resultatStunden = EntfernungMond / Geschwindigkeit;
+            return resultatStunden;
         }
 
-
+        public double ZeitWegZumMondTage()
+        {
+            double StundenWegMond = ZeitWegZumMondStunden();
+            double resultatTage = StundenWegMond / 24;
+            return resultatTage;
+        }
 
     }
 }

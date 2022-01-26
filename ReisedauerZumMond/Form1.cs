@@ -19,15 +19,27 @@ namespace ReisedauerZumMond
 
         private void btnBerechnen_Click(object sender, EventArgs e)
         {
-            double geschwindigkeit = 
+            string geschwindigkeit = txtGeschwindigkeit.Text;
+            double Geschwindigkeit = 0;
+            if(double.TryParse(geschwindigkeit, out Geschwindigkeit) == false)
+            {
+                MessageBox.Show("Geben sie eine Gültige geschwindikeit an");
+            }
+            
             if (radiobtnStunden.Checked == true)
             {
-                MessageBox.Show("Stunden");
+                ReisedauerZumMondBerechnung r = new ReisedauerZumMondBerechnung();
+                r.Geschwindigkeit = Geschwindigkeit;
+                double result = r.ZeitWegZumMondStunden();
+                txtResultat.Text = result.ToString();
 
             }
-            else if(radioButtonMinuten.Checked == true)
+            else if(radioButtonTage.Checked == true)
             {
-                MessageBox.Show("Minuten");
+                ReisedauerZumMondBerechnung r = new ReisedauerZumMondBerechnung();
+                r.Geschwindigkeit = Geschwindigkeit;
+                double result = r.ZeitWegZumMondTage();
+                txtResultat.Text = result.ToString();
             }
         }
     }
